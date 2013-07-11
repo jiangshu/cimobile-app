@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/bg5"
+    >
+    
+    <!-- head -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:background="@drawable/title"
+        android:paddingTop="3dip"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        >
+       
+         <TextView 
+			android:id="@+id/titile_info_text"
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content"
+			android:textSize="20sp" 
+			android:gravity="center_horizontal"
+			android:textColor="@color/white" 
+			android:text="@string/menu_info" />	
+    </LinearLayout>
+     <!-- /head -->
+    
+    <ScrollView
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:layout_marginTop="50dip"
+        android:layout_marginBottom="60dip"
+        >
+       <LinearLayout
+            android:orientation="vertical"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+           >
+           
+           <TableLayout
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:padding="10dip" > 
+	            
+	            <TableRow
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content" 
+	                android:background="@drawable/top_corner_no_bottom_line" 
+	                android:padding="10dip" >
+	
+	                <TextView 
+						android:layout_width="wrap_content" 
+						android:layout_height="wrap_content"
+						android:textSize="15sp" 
+						android:textColor="@color/lable" 
+						android:text="@string/type_lab" />
+	                <TextView 
+	                    android:id="@+id/info_type"
+						android:layout_width="wrap_content" 
+						android:layout_height="wrap_content"
+						android:textSize="15sp" 
+						android:textColor="@color/white" 
+						android:text="@string/info_default_value" />
+	             </TableRow>
+            
+	            <TableRow
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content" 
+	                android:background="@drawable/no_corner_without_bottom" 
+	                android:padding="10dip" >
+	          
+	               <TextView 
+						android:layout_width="fill_parent" 
+						android:layout_height="wrap_content"
+						android:textSize="15sp" 
+						android:textColor="@color/lable" 
+						android:text="@string/version_lab" />
+	               
+	               <TextView 
+	                    android:id="@+id/info_version"
+						android:layout_width="wrap_content" 
+						android:layout_height="wrap_content"
+						android:textSize="15sp" 
+						android:textColor="@color/white" 
+						android:text="@string/info_default_value" />
+	            </TableRow>
+            
+            
+	           <TableRow
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content" 
+	                android:background="@drawable/no_corner_without_bottom" 
+	                android:padding="10dip" >
+	          
+	               <TextView 
+						android:layout_width="fill_parent" 
+						android:layout_height="wrap_content"
+						android:textSize="15sp" 
+						android:textColor="@color/lable" 
+						android:text="@string/ip_lab" />
+	               <TextView 
+	                    android:id="@+id/info_ip"
+						android:layout_width="wrap_content" 
+						android:layout_height="wrap_content"
+						android:textSize="15sp" 
+						android:textColor="@color/white" 
+						android:text="@string/info_default_value" />
+	            </TableRow>
+            
+           
+	             <TableRow
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content" 
+	                android:background="@drawable/no_corner_without_bottom" 
+	                android:padding="10dip" >
+	          
+	               <TextView 
+						android:layout_width="fill_parent" 
+						android:layout_height="wrap_content"
+						android:textSize="15sp" 
+						android:textColor="@color/lable" 
+						android:text="@string/id_lab" />
+	               <TextView 
+	                    android:id="@+id/info_id"
+						android:layout_width="wrap_content" 
+						android:layout_height="wrap_content"
+						android:textSize="15sp" 
+						android:textColor="@color/white" 
+						android:text="@string/info_default_value" />
+	             </TableRow>
+            
+	            <TableRow
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content" 
+	                android:background="@drawable/no_corner_without_bottom"	               
+	                android:padding="10dip" >
+	               <TextView
+	                   	android:layout_width="fill_parent" 
+						android:layout_height="wrap_content"
+						android:textSize="15sp" 
+						android:textColor="@color/lable" 
+						android:text="@string/browser_lab" /> 
+
+		           <TextView 
+			            android:id="@+id/info_browser"
+						android:layout_width="wrap_content" 
+						android:layout_height="wrap_content"
+						android:textSize="15sp" 
+						android:textColor="@color/white" 
+						android:text="@string/info_default_value" />
+
+	             </TableRow>
+            
+            
+	           <TableRow
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content" 
+	                android:background="@drawable/bottom_corner_no_top_line" 
+	                android:padding="10dip" >
+	         
+	                <TextView 
+						android:layout_width="fill_parent" 
+						android:layout_height="wrap_content"
+						android:textSize="15sp" 
+						android:textColor="@color/lable" 
+						android:text="@string/status_lab" />
+	                <TextView 
+	                    android:id="@+id/info_status"
+						android:layout_width="wrap_content" 
+						android:layout_height="wrap_content"
+						android:textSize="15sp" 
+						android:textColor="@color/white" 
+						android:text="@string/info_default_value" />
+	            </TableRow>                       
+            </TableLayout>	
+            <Button
+					android:id = "@+id/disConnect"
+					android:layout_width = "fill_parent"
+				 	android:layout_height = "50dip"
+				 	android:layout_marginBottom="50dip"
+				 	android:layout_marginLeft="5dip"
+				 	android:layout_marginRight="5dip"
+				 	android:textSize="18sp"
+				 	android:textColor="#FF0000"
+				 	android:text = "@string/disConnect"
+					/>	                  
+       </LinearLayout>                   		
+    </ScrollView>
+
+   <include layout="@layout/bottom_menu" />
+</RelativeLayout>

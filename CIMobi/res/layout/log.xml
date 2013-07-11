@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+  <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:background="@drawable/title"
+        android:paddingTop="3dip"
+        android:gravity="center"
+        android:layout_alignParentTop="true">
+       
+         <TextView 
+			android:id="@+id/title_log_text"
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content"
+			android:textSize="20sp" 
+			android:gravity="center_horizontal"
+			android:textColor="@color/white" 
+			android:text="@string/menu_log" />					
+    </LinearLayout>
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" 
+        android:layout_alignParentRight="true" 
+        android:layout_marginTop="2dip"
+        android:layout_marginRight="5dip"
+        >
+        <Button
+			android:id = "@+id/log_clean"
+			android:layout_width = "60dip"
+			android:layout_height = "35dip"
+			android:textSize="15sp"
+			android:text = "清除 "
+			android:textColor="#86c434"
+			android:padding="0dip"
+			android:layout_marginRight="5dip"/> 
+    </RelativeLayout>
+    
+    <ScrollView
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="40dip"
+        android:layout_marginBottom="50dip"
+        android:background="@drawable/bg8">
+         
+       <LinearLayout
+            android:id="@+id/log_container"
+            android:orientation="vertical"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginRight="10dip"
+	        android:layout_marginLeft="10dip">
+            <!--  
+           <LinearLayout
+                android:orientation="vertical"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="10dip">
+                <TextView 
+					android:layout_width="fill_parent" 
+					android:layout_height="wrap_content"
+					android:textSize="15sp" 
+					android:textColor="@color/time" 
+					android:text="* 08-10 11:23"/>
+                 <TextView 
+					android:layout_width="fill_parent" 
+					android:layout_height="wrap_content"
+					android:textSize="15sp" 
+					android:textColor="@color/log"
+					android:background="@drawable/log_corner" 
+					android:padding="5dip"
+					android:text="open uc browser(http://www.badddddddd dddddddddiud.com)"/> 
+           </LinearLayout>
+       
+          
+           <TextView 
+				android:id="@+id/main_log"
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"
+				android:paddingLeft="5dip"
+                android:paddingRight="5dip"
+				android:textSize="15sp" 
+				android:textColor="@color/white" />
+	        -->          
+       </LinearLayout>                   		
+    </ScrollView>
+
+   <include layout="@layout/bottom_menu" />
+</RelativeLayout>

@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/bg5"
+    >
+    
+    <!-- head -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:background="@drawable/title"
+        android:paddingTop="3dip"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        >
+       
+         <TextView 
+			android:id="@+id/title_log_text"
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content"
+			android:textSize="20sp" 
+			android:gravity="center_horizontal"
+			android:textColor="@color/white" 
+			android:text="@string/menu_set" />	
+    </LinearLayout>
+    <!-- /head -->
+    
+    
+    <ScrollView
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="50dip"
+        android:layout_marginBottom="80dip"
+        >
+                 
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dip" 
+            android:orientation="vertical"> 
+            
+            <!-- 使系统初始的时候不会打开键盘  -->
+            <LinearLayout
+	            android:focusable="true"
+	            android:focusableInTouchMode="true"
+	            android:layout_width="0px" 
+	            android:layout_height="0px"/>
+            
+            <LinearLayout 
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:padding="10dip" 
+	            android:background="@drawable/setup_corner" 
+	            android:orientation="horizontal"
+	            android:layout_marginBottom="20dip"> 
+                <TextView 
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content"
+					android:textSize="15sp" 
+					android:textColor="@color/lable" 
+					android:text="@string/ip_lable" /> 
+			   <EditText
+	                android:id="@+id/set_ip"
+					android:layout_width="fill_parent" 
+					android:layout_height="30sp"
+					android:layout_marginLeft="10sp"
+					android:textSize="15sp"	
+					android:background="@null"
+					android:textColor="@color/white"
+					android:singleLine="true"
+					android:text="@string/ip_value"/>	
+            </LinearLayout>
+            
+            <LinearLayout 
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:padding="10dip" 
+	            android:background="@drawable/setup_corner" 
+	            android:orientation="horizontal"
+	            android:layout_marginBottom="20dip"> 
+                <TextView 
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content"
+					android:textSize="15sp" 
+					android:textColor="@color/lable" 
+					android:text="@string/port_lable" /> 
+				<EditText
+	                android:id="@+id/set_port"
+					android:layout_width="fill_parent" 
+					android:layout_height="30sp"
+					android:layout_marginLeft="10sp"
+					android:textSize="15sp"	
+					android:background="@null"
+					android:textColor="@color/white"
+					android:singleLine="true"
+					android:text="@string/port_value"/>	
+             </LinearLayout>
+            
+             <LinearLayout 
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:padding="10dip" 
+	            android:background="@drawable/setup_corner" 
+	            android:orientation="horizontal"
+	            android:layout_marginBottom="20dip"> 
+                <TextView 
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content"
+					android:textSize="15sp" 
+					android:textColor="@color/lable" 
+					android:text="@string/alias_lable" /> 
+				<EditText
+	                android:id="@+id/set_alias"
+					android:layout_width="fill_parent" 
+					android:layout_height="30sp"
+					android:layout_marginLeft="10sp"
+					android:textSize="15sp"	
+					android:background="@null"
+					android:textColor="@color/white"
+					android:singleLine="true"
+					android:text="@string/alias_value"/>	
+            </LinearLayout>
+            
+            <LinearLayout 
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="horizontal"
+	            android:gravity="center"
+	            > 
+	            
+				<Button
+					android:id = "@+id/set_save"
+					android:layout_width = "90dip"
+				 	android:layout_height = "50dip"
+				 	android:textSize="18sp"
+				 	android:text = "@string/save_button"
+				 	android:textColor="#86c434"
+				 	android:layout_marginRight="10dip"
+					/> 
+					
+				<Button
+					android:id = "@+id/set_connect"
+					android:layout_width = "90dip"
+				 	android:layout_height = "50dip"
+				 	android:textSize="18sp"
+				 	android:textColor="#86c434"
+				 	android:text = "@string/connect_button"
+				 	android:layout_marginRight="10dip"
+					/>
+				
+				<Button
+					android:id = "@+id/set_disconnect"
+					android:layout_width = "90dip"
+				 	android:layout_height = "50dip"
+				 	android:textSize="18sp"
+				 	android:textColor="#86c434"
+				 	android:text = "@string/disconnet_button"
+					/>
+
+            </LinearLayout>
+
+            
+        </LinearLayout>
+        
+        <!--  
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dip" > 
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" 
+                android:background="@drawable/top_corner_no_bottom_line" 
+                android:padding="10dip" >
+
+                <TextView 
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content"
+					android:textSize="15sp" 
+					android:textColor="@color/black" 
+					android:text="@string/ip_lable" />
+                
+                
+            </TableRow>
+            
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" 
+                android:background="@drawable/no_corner_without_bottom" 
+                android:padding="10dip" >
+          
+               <TextView 
+					android:layout_width="fill_parent" 
+					android:layout_height="wrap_content"
+					android:textSize="15sp" 
+					android:textColor="@color/black" 
+					android:text="@string/ip_lable" />
+            </TableRow>
+            
+            
+           <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" 
+                android:background="@drawable/bottom_corner_no_top_line" 
+                android:padding="10dip" >
+         
+                <TextView 
+					android:layout_width="fill_parent" 
+					android:layout_height="wrap_content"
+					android:textSize="15sp" 
+					android:textColor="@color/black" 
+					android:text="@string/ip_lable" />
+            </TableRow>
+            
+            
+        </TableLayout>
+         -->
+        <!--  
+       <LinearLayout
+            android:orientation="vertical"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:background="@drawable/corners"
+           >
+
+           <TextView 
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"
+				android:textSize="15sp" 
+				android:textColor="@color/white" 
+				android:text="@string/ip_lable" />
+           <LinearLayout
+                android:focusable="true" android:focusableInTouchMode="true"
+                android:layout_width="0px" android:layout_height="0px"/>
+           <EditText
+                android:id="@+id/set_ip"
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"
+				android:textSize="20sp"	
+				android:background="@null"
+				android:singleLine="true"/>"
+		  		
+		    <TextView 
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"
+				android:textSize="15sp" 
+				android:textColor="@color/white" 
+				android:text="@string/port_lable" />
+           <EditText 
+                android:id="@+id/set_port"
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"
+				android:textSize="20dip" 
+				android:text="@string/port_value" 
+				android:textAppearance="?android:attr/textAppearanceLarge"/>
+          
+           	<TextView 
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"
+				android:textSize="15dip" 
+				android:textColor="@color/white" 
+				android:text="@string/alias" />
+           <EditText 
+                android:id="@+id/set_alias"
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"
+				android:textSize="20dip" 
+				 />	
+				 
+		   <LinearLayout 
+		        android:orientation="horizontal"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="20dip"
+		       >
+		       
+		       <TextView 
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content"
+					android:textSize="15dip" 
+					android:textColor="@color/white" 
+					android:text="@string/ip_lable" />
+		       
+		       <TextView 
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content"
+					android:textSize="15dip" 
+					android:textColor="@color/white" 
+					android:text="@string/port_lable" />	
+		   </LinearLayout>		 	
+	                  
+       </LinearLayout>-->             		
+    </ScrollView>
+   
+   <!--  buttom  -->
+   <include layout="@layout/bottom_menu" />
+   <!--  /buttom  -->
+   
+</RelativeLayout>

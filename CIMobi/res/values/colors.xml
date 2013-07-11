@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="menu_background_color">#222222</color>
+    <color name="white">#FFFFFF</color>
+    <color name="blue">#ff00ff</color>
+    <color name="black">#000000</color>
+    <color name="bg_black">#22ffffff</color>
+    <color name="lable">#c48c0a</color>
+    <color name="time">#164cd1</color>
+    <color name="log">#770000</color>
+    <color name="black_overlay">#66000000</color>
+
+</resources>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" 
+	android:layout_height="50dip"
+	android:layout_alignParentBottom="true" 
+	android:gravity="center">
+	
+	<LinearLayout 
+	    
+	    android:orientation="horizontal"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:background="@color/menu_background_color" 
+		android:paddingTop="3dip">
+		
+	    <!-- config -->
+		<LinearLayout 
+		    android:orientation="vertical" 
+		    android:id="@+id/menu_config"
+			android:layout_width="0dip" 
+			android:layout_weight="0.20"
+			android:layout_height="wrap_content" 
+			android:clickable="true"
+			android:background="@drawable/menu"
+			>
+			<ImageView 
+			    android:layout_width="wrap_content" 
+			    android:id="@+id/menu_config_img"
+				android:layout_gravity="center_horizontal" 
+				android:layout_height="27dip"
+				android:layout_centerVertical="true" 
+				android:src="@drawable/menu_config_released" />
+				
+			<TextView 
+			    android:id="@+id/menu_config_text"
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"
+				android:textSize="12sp" 
+				android:gravity="center_horizontal"
+				android:textColor="@color/white" 
+				android:text="@string/menu_set" />				
+		</LinearLayout>
+	    
+	    
+	    <!-- log -->
+		<LinearLayout 
+		    android:orientation="vertical" 
+		    android:id="@+id/menu_log"
+			android:layout_width="0dip" 
+			android:layout_weight="0.20"
+			android:layout_height="wrap_content" 
+			android:clickable="true"
+			android:background="@drawable/menu"
+			>
+			<ImageView 
+			    android:layout_width="wrap_content" 
+			    android:id="@+id/menu_log_img"
+				android:layout_gravity="center_horizontal" 
+				android:layout_height="27dip"
+				android:layout_centerVertical="true" 
+				android:src="@drawable/menu_log_released" />
+				
+			<TextView 
+			    android:id="@+id/menu_log_text"
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"
+				android:textSize="12sp" 
+				android:gravity="center_horizontal"
+				android:textColor="@color/white" 
+				android:text="@string/menu_log" />		
+		</LinearLayout>
+		
+
+		
+		<!-- info -->
+		<LinearLayout 
+		    android:orientation="vertical" 
+		    android:id="@+id/menu_info"
+			android:layout_width="0dip" 
+			android:layout_weight="0.20"
+			android:layout_height="wrap_content" 
+			android:clickable="true"
+			android:background="@drawable/menu"
+			>
+			<ImageView 
+			    android:layout_width="wrap_content" 
+			    android:id="@+id/menu_info_img"
+				android:layout_gravity="center_horizontal" 
+				android:layout_height="27dip"
+				android:layout_centerVertical="true" 
+				android:src="@drawable/menu_info_released" />
+				
+			<TextView 
+			    android:id="@+id/menu_status_text"
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"
+				android:textSize="12sp" 
+				android:gravity="center_horizontal"
+				android:textColor="@color/white" 
+				android:text="@string/menu_info" />				
+		</LinearLayout>		
+	</LinearLayout>	
+</RelativeLayout>
